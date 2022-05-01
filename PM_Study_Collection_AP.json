@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "0d413f1e-7fc3-48e3-97c2-50bfa438f67a",
+		"name": "Andrey Popov_test collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 1.\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const person = pm.response.json()\r",
+							"\r",
+							"// 2.\r",
+							"pm.test(\"Item_1 personAge\", function () {\r",
+							"    pm.expect(person.name).to.deep.equal('Andrey');\r",
+							"});\r",
+							"\r",
+							"// 3.\r",
+							"pm.test(\"Item_2 AlexAge\", function () {\r",
+							"    pm.expect(person.family.children[0][1]).to.deep.equal(24);\r",
+							"});\r",
+							"\r",
+							"// 4.\r",
+							"pm.test(\"Item_3 haveProperty\", function () {\r",
+							"    pm.expect(person).to.have.property('name');\r",
+							"});\r",
+							"\r",
+							"// 5.\r",
+							"pm.test(\"Item_4 includeElement\", function () {\r",
+							"    pm.expect(person).to.deep.include({\"name\": \"Andrey\"});\r",
+							"});\r",
+							"\r",
+							"// 6.\r",
+							"pm.test(\"Item_5 arrInclude\", function () {\r",
+							"    pm.expect(person.family.children[1]).to.deep.include('Kate');\r",
+							"});\r",
+							"\r",
+							"// 7.\r",
+							"pm.test(\"Item_6 isTypeOf\", function () {\r",
+							"    pm.expect(person.family.children[1][1]).to.be.an('Number');\r",
+							"});\r",
+							"\r",
+							"// 8.\r",
+							"pm.test(\"Item_7 isTyapeOfAndIncludes\", function () {\r",
+							"    pm.expect(person.family.children[1]).to.be.an('Array').that.includes('Kate');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "38",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "60",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Andrey",
+							"type": "default"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_test_user",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_test_user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
