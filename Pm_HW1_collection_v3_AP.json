@@ -24,7 +24,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5005/get_method?name=name&age=38",
+					"raw": "http://162.55.220.72:5005/get_method?name={{name}}&age={{age}}",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -39,11 +39,11 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "name"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "38"
+							"value": "{{age}}"
 						}
 					]
 				}
@@ -60,17 +60,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Andrey",
+							"value": "{{name}}",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "60000",
+							"value": "{{salary}}",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "38",
+							"value": "{{age}}",
 							"type": "default"
 						}
 					]
@@ -148,7 +148,7 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_2?name=Andrey&age=38&salary=60000",
+					"raw": "http://162.55.220.72:5005/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -163,15 +163,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Andrey"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "38"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "60000"
+							"value": "{{salary}}"
 						}
 					]
 				}
@@ -191,7 +191,7 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_3?name=Andrey&age=38&salary=60000",
+					"raw": "http://162.55.220.72:5005/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -206,15 +206,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Andrey"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "38"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "60000"
+							"value": "{{salary}}"
 						}
 					]
 				}
@@ -234,7 +234,7 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_4?name=Andrey&age=38&salary=60000",
+					"raw": "http://162.55.220.72:5005/object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -249,15 +249,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Andrey"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "38"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "60000"
+							"value": "{{salary}}"
 						}
 					]
 				}
@@ -274,17 +274,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Andrey",
+							"value": "{{name}}",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "60000",
+							"value": "{{salary}}",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "38",
+							"value": "{{age}}",
 							"type": "default"
 						}
 					]
