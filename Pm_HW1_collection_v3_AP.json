@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "cb440c10-bfdc-4147-a4b3-70968181e903",
+		"_postman_id": "8bca4b0d-b081-47d8-9649-e09409aa01d3",
 		"name": "Postman_HW1_AP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -24,26 +24,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5005/get_method?name={{name}}&age={{age}}",
-					"protocol": "http",
+					"raw": "{{url}}get_method?name={{myName}}&age={{myAge}}",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"get_method"
+						"{{url}}get_method"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "{{myName}}"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "{{myAge}}"
 						}
 					]
 				}
@@ -60,33 +52,25 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "{{name}}",
+							"value": "{{myName}}",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}",
+							"value": "{{mySalary}}",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}",
+							"value": "{{myAge}}",
 							"type": "default"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_3",
-					"protocol": "http",
+					"raw": "{{url}}user_info_3",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"user_info_3"
+						"{{url}}user_info_3"
 					]
 				}
 			},
@@ -105,30 +89,22 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_1?name={{name}}&age={{age}}&weight=60",
-					"protocol": "http",
+					"raw": "{{url}}object_info_1?name={{myName}}&age={{myAge}}&weight={{myWeight}}",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_1"
+						"{{url}}object_info_1"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "{{myName}}"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "{{myAge}}"
 						},
 						{
 							"key": "weight",
-							"value": "60"
+							"value": "{{myWeight}}"
 						}
 					]
 				}
@@ -148,30 +124,22 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
-					"protocol": "http",
+					"raw": "{{url}}object_info_2?name={{myName}}&age={{myAge}}&salary={{mySalary}}",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_2"
+						"{{url}}object_info_2"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "{{myName}}"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "{{myAge}}"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}"
+							"value": "{{mySalary}}"
 						}
 					]
 				}
@@ -191,30 +159,22 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
-					"protocol": "http",
+					"raw": "{{url}}object_info_3?name={{myName}}&age={{myAge}}&salary={{mySalary}}",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_3"
+						"{{url}}object_info_3"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "{{myName}}"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "{{myAge}}"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}"
+							"value": "{{mySalary}}"
 						}
 					]
 				}
@@ -234,30 +194,22 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
-					"protocol": "http",
+					"raw": "{{url}}object_info_4?name={{myName}}&age={{myAge}}&salary={{mySalary}}",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_4"
+						"{{url}}object_info_4"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "{{myName}}"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "{{myAge}}"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}"
+							"value": "{{mySalary}}"
 						}
 					]
 				}
@@ -274,33 +226,25 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "{{name}}",
+							"value": "{{myName}}",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}",
+							"value": "{{mySalary}}",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}",
+							"value": "{{myAge}}",
 							"type": "default"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_2",
-					"protocol": "http",
+					"raw": "{{url}}user_info_2",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"user_info_2"
+						"{{url}}user_info_2"
 					]
 				}
 			},
