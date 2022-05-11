@@ -1,39 +1,39 @@
 {
-	"id": "aa29bab0-417f-449c-812b-96f7d21783d7",
+	"id": "d09dd675-4007-4d02-9851-810a7c166fb1",
 	"name": "Special for Anatoliy",
 	"values": [
 		{
 			"key": "myName",
-			"value": "",
+			"value": "Andrey",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "myAge",
-			"value": "",
+			"value": "38",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "mySalary",
-			"value": "",
+			"value": "60000",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "myWeight",
-			"value": "",
+			"value": "60",
 			"type": "default",
 			"enabled": true
 		},
 		{
 			"key": "url",
-			"value": "",
+			"value": "http://162.55.220.72:5005/",
 			"type": "default",
 			"enabled": true
 		}
 	],
 	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2022-05-11T19:03:35.466Z",
+	"_postman_exported_at": "2022-05-11T20:08:52.732Z",
 	"_postman_exported_using": "Postman/9.16.0"
 }
